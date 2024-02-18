@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div id="mainContent" class="center">
+            <div id="loadingDiv" class="center">
+                <img id="loadingGif" class="center" src="LoadingGif.gif" alt="Loading...">
+                <button id="loadButton" class="center" type="button">Load Data</button>
+            </div>
+            <div id="listDiv" class="center divBorder">
+                <ul>
+                    <li>Red</li>
+                    <li>Blue</li>
+                    <li>Green</li>
+                </ul>
+            </div>
+            
+        </br>
+
+            <div id="errorMessageDiv" class="center divBorder">
+                <div id="nameErrorDiv" class="center">
+                    <p>Name is a required field</p>
+                </div>
+                <div id="ageErrorDiv" class="center">
+                    <p>Age must be a number between 1 and 100</p>
+                </div>
+                <button id="errorButton" class="corner-button">X</button>
+            </div>
+
+        </br>
+
+            <div id="dataEntryDiv" class="center divBorder">
+                <form id="dataForm" method="POST" action="success.html">
+                    <input id="inputName" class="text-input" type="text" placeholder="Enter your name">
+                </br>
+                    <input id="inputAge" class="text-input" type="text" placeholder="Enter your age">
+                </br></br>
+                    <input id="inputButton" type="submit">
+                </form>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>

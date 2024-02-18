@@ -1,0 +1,68 @@
+.center{
+    margin: auto;
+    width: 50%;
+}
+
+.divBorder{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.corner-button {
+    position: absolute; /* Position the button relative to the container */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    background-color: white;
+    color: red;
+}
+
+.text-input{
+    margin: auto;
+    width: 100%;
+}
+
+#listDiv{
+    border-color: green;
+}
+
+#errorMessageDiv{
+    border-color: red;
+    
+    position: relative;
+
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    padding: 15px;
+}
+
+#dataEntryDiv{
+    border-color: black;
+    padding: 5px;
+}
+
+#inputButton{
+    display: block;
+    margin: auto;
+}
+
+#dataForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameErrorDiv, #ageErrorDiv{
+    width: 100%;
+}
+
+#loadingGif{
+    display: block;
+}
+
+#loadButton{
+    display: flex;
+    justify-content: center;
+}

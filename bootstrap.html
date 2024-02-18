@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Home</Title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container row-gap-5">
+            <!--row 1-->
+            <div class="row mt-5">
+                <div class="col-2"></div> <!--blank col-->
+
+                <div class="col-4">
+                    <div id="loadingDiv" class="">
+                        <div class="d-flex justify-content-center m-1">
+                            <img id="loadingGif" class="center" src="LoadingGif.gif" alt="Loading...">
+                        </div>
+                        <div class="d-flex justify-content-center m-1">
+                            <button id="loadButton" type="button">Load Data</button>
+                        </div>
+                    </div>
+                    <div id="listDiv" class="m-auto p-3 bg-success text-dark border border-secondary-subtle border-2">
+                        <ul>
+                            <li>Red</li>
+                            <li>Blue</li>
+                            <li>Green</li>
+                        </ul>
+                    </div>
+                </div> <!--list col-->
+
+                <div class="col-4">
+                    <div id="errorMessageDiv" class="m-auto p-3 border border-danger border-2 text-danger fw-bold">
+                        <div class="float-end">
+                            <button id="errorButton">X</button>
+                        </div>
+                        <div id="nameErrorDiv" class="center">
+                            <p>Name is a required field</p>
+                        </div>
+                        <div id="ageErrorDiv" class="center">
+                            <p>Age must be a number between 1 and 100</p>
+                        </div>
+                        
+                        
+                    </div>
+                </div> <!--error col-->
+
+                <div class="col-2"></div> <!--blank col-->
+            </div>
+            <!--row 1-->
+
+            <!--row 2-->
+            <div class="row mt-5">
+                <div class="col-2"></div> <!--blank col-->
+
+                <div class="col-8">
+                    <div id="dataEntryDiv" class="d-flex justify-content-center p-3 border border-2 border-secondary-subtle">
+                        <form id="dataForm" method="POST" action="success.html">
+                            <input id="inputName" class="input-group-text" type="text" placeholder="Name">
+                        </br>
+                            <input id="inputAge" class="input-group-text" type="text" placeholder="Age">
+                        </br>
+                            <div class="d-flex justify-content-center">
+                                <input id="inputButton" type="submit">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div> <!--data entry col-->
+
+                <div class="col-2"></div> <!--blank col-->
+
+            </div>
+            <!--row 2-->
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
